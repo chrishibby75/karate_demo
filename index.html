@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Karate Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-lg-12">
+            <h1>Martial Arts Can Change Your Life and Better Your Career</h1>
+            <div class="text-center">
+            <button class="btn btn-sm btn-default" id="home-button">Home</button>
+            <button class="btn btn-sm btn-default" id="principles-button">Dojo Kun</button>
+            <button class="btn btn-sm btn-default" id="kiai-button">Kiai</button>
+            </div>
+        </div>
+
+        <div class="row text-center" id="home">
+            <div class="col-lg-12">
+                <img src="images/shotokan.jpg" alt="shotokan">
+            </div>
+            <div class="col-lg-8">
+
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="row" id="principles">
+            <div class="col-lg-3">
+                <img src="images/1200px-Shotokan_japanese.svg.png" id="shotokan" height="500" width="300">
+            </div>
+                <div class="col-sm-9">
+                    <h1>The Five Principles</h1>
+                    <hr>
+                    <h3><strong>EFFORT</strong></h3>
+                    <p>Putting forth an exertion of strength or power, physically, or mentally.</p>
+                    <h3><strong>ETIQUETTE</strong></h3>
+                    <hr>
+                    <p>The conventional code of good manners which governs behavior in society; professional and business decorum.</p>
+                    <h3><strong>SINCERITY</strong></h3>
+                    <hr>
+                    <p>Honesty of mind or intention; truthfulness. Always tell the truth. Say and do exactly what you mean.</p>
+                    <h3><strong>SELF-CONTROL</strong></h3>
+                    <hr>
+                    <p>Control over ones own impulses, emotions, and weaknesses. Always do what you have to do. Finish what you begin.</p>
+                    <h3><strong>CHARACTER</strong></h3>
+                    <hr>
+                    <p>The total sum of qualities making up an individual; moral excellence, the person that you really are.</p>
+                </div>
+        </div>
+
+        <div class="row" id="kiai">
+            <div class="text-center" style="background: white">
+                <h1>"A fighting spirit is as indispensable in management as it is in any martial arts."</h1>
+                <h6 class="text-right">-Kazuo Inamori</h6>
+                <img src="images/kiai.jpg" height="350" width="200">
+                <h2>This unyielding sense of grit manifests itself in the "Kiai!"</h2>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+$("#home-button").on("click", function() {
+    $("#home").show();
+    $("#principles").hide();
+    $("#kiai").hide();
+});
+
+$("#principles-button").on("click", function() {
+    $("#principles").show();
+    $("#home").hide();
+    $("#kiai").hide();
+});
+
+$("#kiai-button").on("click", function() {
+    $("#kiai").show();
+    $("#home").hide();
+    $("#principles").hide();
+});
+</script>
